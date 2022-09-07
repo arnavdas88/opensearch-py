@@ -184,7 +184,7 @@
         <span class="n">ssl_context</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">http_compress</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
         <span class="n">opaque_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span>
     <span class="p">):</span>
         <span class="c1"># Initialize headers before calling super().__init__().</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="n">urllib3</span><span class="o">.</span><span class="n">make_headers</span><span class="p">(</span><span class="n">keep_alive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -196,7 +196,7 @@
             <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
             <span class="n">http_compress</span><span class="o">=</span><span class="n">http_compress</span><span class="p">,</span>
             <span class="n">opaque_id</span><span class="o">=</span><span class="n">opaque_id</span><span class="p">,</span>
-            <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span>
         <span class="p">)</span>
         <span class="k">if</span> <span class="n">http_auth</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">http_auth</span><span class="p">,</span> <span class="p">(</span><span class="nb">tuple</span><span class="p">,</span> <span class="nb">list</span><span class="p">)):</span>
