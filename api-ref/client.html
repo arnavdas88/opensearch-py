@@ -18,6 +18,7 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/clipboard.min.js"></script>
         <script src="../_static/copybutton.js"></script>
     <script src="../_static/js/theme.js"></script>
@@ -45,7 +46,55 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../api-ref.html">API Reference</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">client</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#opensearchpy.OpenSearch"><code class="docutils literal notranslate"><span class="pre">OpenSearch</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.__repr__"><code class="docutils literal notranslate"><span class="pre">OpenSearch.__repr__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.bulk"><code class="docutils literal notranslate"><span class="pre">OpenSearch.bulk()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.clear_scroll"><code class="docutils literal notranslate"><span class="pre">OpenSearch.clear_scroll()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.close"><code class="docutils literal notranslate"><span class="pre">OpenSearch.close()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.close_point_in_time"><code class="docutils literal notranslate"><span class="pre">OpenSearch.close_point_in_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.count"><code class="docutils literal notranslate"><span class="pre">OpenSearch.count()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.create"><code class="docutils literal notranslate"><span class="pre">OpenSearch.create()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.delete"><code class="docutils literal notranslate"><span class="pre">OpenSearch.delete()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.delete_by_query"><code class="docutils literal notranslate"><span class="pre">OpenSearch.delete_by_query()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.delete_by_query_rethrottle"><code class="docutils literal notranslate"><span class="pre">OpenSearch.delete_by_query_rethrottle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.delete_script"><code class="docutils literal notranslate"><span class="pre">OpenSearch.delete_script()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.exists"><code class="docutils literal notranslate"><span class="pre">OpenSearch.exists()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.exists_source"><code class="docutils literal notranslate"><span class="pre">OpenSearch.exists_source()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.explain"><code class="docutils literal notranslate"><span class="pre">OpenSearch.explain()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.field_caps"><code class="docutils literal notranslate"><span class="pre">OpenSearch.field_caps()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.get"><code class="docutils literal notranslate"><span class="pre">OpenSearch.get()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.get_script"><code class="docutils literal notranslate"><span class="pre">OpenSearch.get_script()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.get_script_context"><code class="docutils literal notranslate"><span class="pre">OpenSearch.get_script_context()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.get_script_languages"><code class="docutils literal notranslate"><span class="pre">OpenSearch.get_script_languages()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.get_source"><code class="docutils literal notranslate"><span class="pre">OpenSearch.get_source()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.index"><code class="docutils literal notranslate"><span class="pre">OpenSearch.index()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.info"><code class="docutils literal notranslate"><span class="pre">OpenSearch.info()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.mget"><code class="docutils literal notranslate"><span class="pre">OpenSearch.mget()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.msearch"><code class="docutils literal notranslate"><span class="pre">OpenSearch.msearch()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.msearch_template"><code class="docutils literal notranslate"><span class="pre">OpenSearch.msearch_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.mtermvectors"><code class="docutils literal notranslate"><span class="pre">OpenSearch.mtermvectors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.open_point_in_time"><code class="docutils literal notranslate"><span class="pre">OpenSearch.open_point_in_time()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.ping"><code class="docutils literal notranslate"><span class="pre">OpenSearch.ping()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.put_script"><code class="docutils literal notranslate"><span class="pre">OpenSearch.put_script()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.rank_eval"><code class="docutils literal notranslate"><span class="pre">OpenSearch.rank_eval()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.reindex"><code class="docutils literal notranslate"><span class="pre">OpenSearch.reindex()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.reindex_rethrottle"><code class="docutils literal notranslate"><span class="pre">OpenSearch.reindex_rethrottle()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.render_search_template"><code class="docutils literal notranslate"><span class="pre">OpenSearch.render_search_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.scripts_painless_execute"><code class="docutils literal notranslate"><span class="pre">OpenSearch.scripts_painless_execute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.scroll"><code class="docutils literal notranslate"><span class="pre">OpenSearch.scroll()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.search"><code class="docutils literal notranslate"><span class="pre">OpenSearch.search()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.search_shards"><code class="docutils literal notranslate"><span class="pre">OpenSearch.search_shards()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.search_template"><code class="docutils literal notranslate"><span class="pre">OpenSearch.search_template()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.terms_enum"><code class="docutils literal notranslate"><span class="pre">OpenSearch.terms_enum()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.termvectors"><code class="docutils literal notranslate"><span class="pre">OpenSearch.termvectors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.update"><code class="docutils literal notranslate"><span class="pre">OpenSearch.update()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.update_by_query"><code class="docutils literal notranslate"><span class="pre">OpenSearch.update_by_query()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#opensearchpy.OpenSearch.update_by_query_rethrottle"><code class="docutils literal notranslate"><span class="pre">OpenSearch.update_by_query_rethrottle()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="connection.html">connection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="connection_pool.html">connection_pool</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exceptions.html">exceptions</a></li>
